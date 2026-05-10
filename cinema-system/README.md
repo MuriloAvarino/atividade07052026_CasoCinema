@@ -145,6 +145,9 @@ Espectador --> UC7
 @enduml
 ```
 
+<img width="359" height="506" alt="image" src="https://github.com/user-attachments/assets/a0e50231-4678-46f6-bea2-1bd82eaf75f8" />
+
+
 ---
 
 # 5. Diagrama de Classes do Domínio
@@ -216,6 +219,8 @@ Filme "1" -- "*" Sessao
 @enduml
 ```
 
+<img width="310" height="364" alt="image" src="https://github.com/user-attachments/assets/12b533a6-5b4d-4100-ac8f-0329dbebafb9" />
+
 ---
 
 # 7. Diagramas de Atividade
@@ -242,6 +247,8 @@ stop
 @enduml
 ```
 
+<img width="256" height="477" alt="image" src="https://github.com/user-attachments/assets/1ad65336-69ad-48c7-8cc1-91ac2e3f0c5f" />
+
 ---
 
 ## 7.2 Registro de Público
@@ -263,6 +270,8 @@ endif
 stop
 @enduml
 ```
+
+<img width="310" height="367" alt="image" src="https://github.com/user-attachments/assets/bf8e2b6f-4b4c-4387-90cf-6a9c61c6e3cb" />
 
 ---
 
@@ -291,6 +300,7 @@ SessaoController --> SessaoView : mensagem sucesso
 
 @enduml
 ```
+<img width="359" height="226" alt="image" src="https://github.com/user-attachments/assets/a964a711-ce18-443e-a087-719025fe765b" />
 
 ---
 
@@ -317,6 +327,8 @@ SessaoController --> PublicoView : confirmação
 
 @enduml
 ```
+
+<img width="359" height="227" alt="image" src="https://github.com/user-attachments/assets/845c5ca6-226c-437e-8d0c-1945a0c7cf35" />
 
 ---
 
