@@ -1,0 +1,19 @@
+@startuml
+actor Administrador
+
+boundary SessaoView
+control SessaoController
+control SessaoService
+entity SessaoRepository
+
+autonumber
+
+Administrador -> SessaoView : Preenche dados
+SessaoView -> SessaoController : cadastrarSessao()
+SessaoController -> SessaoService : salvar(sessao)
+SessaoService -> SessaoRepository : insert(sessao)
+SessaoRepository --> SessaoService : sucesso
+SessaoService --> SessaoController : sucesso
+SessaoController --> SessaoView : mensagem sucesso
+
+@enduml

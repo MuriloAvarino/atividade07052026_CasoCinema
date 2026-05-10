@@ -337,17 +337,34 @@ SessaoController --> PublicoView : confirmação
 ```text
 cinema-system/
 │
-├── src/main/java/com/cinema/
-│   ├── controller/
-│   ├── service/
-│   ├── repository/
-│   ├── model/
-│   └── CinemaSystemApplication.java
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/
+│       │       └── cinema/
+│       │           │
+│       │           ├── CinemaSystemApplication.java
+│       │           │
+│       │           ├── controller/
+│       │           │   └── SessaoController.java
+│       │           │
+│       │           ├── service/
+│       │           │   └── SessaoService.java
+│       │           │
+│       │           ├── repository/
+│       │           │   └── SessaoRepository.java
+│       │           │
+│       │           └── model/
+│       │               ├── Cinema.java
+│       │               ├── Filme.java
+│       │               └── Sessao.java
+│       │
+│       └── resources/
+│           └── application.properties
 │
-├── src/main/resources/
-│   └── application.properties
+├── pom.xml
 │
-└── pom.xml
+└── README.md
 ```
 
 ---

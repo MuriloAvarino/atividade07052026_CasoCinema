@@ -1,0 +1,32 @@
+@startuml
+
+class Cinema {
+  id : Long
+  nome : String
+  cidade : String
+  estado : String
+  endereco : String
+  capacidade : Integer
+}
+
+class Filme {
+  id : Long
+  titulo : String
+  genero : String
+  diretor : String
+  elenco : String
+  duracao : Integer
+}
+
+class Sessao {
+  id : Long
+  horarioInicio : DateTime
+  horarioFim : DateTime
+  sala : Integer
+  publico : Integer
+}
+
+Cinema "1" -- "*" Sessao
+Filme "1" -- "*" Sessao
+
+@enduml

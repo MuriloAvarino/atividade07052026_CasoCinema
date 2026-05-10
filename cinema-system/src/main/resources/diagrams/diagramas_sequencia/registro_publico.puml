@@ -1,0 +1,19 @@
+@startuml
+actor Administrador
+
+boundary PublicoView
+control SessaoController
+control SessaoService
+entity SessaoRepository
+
+autonumber
+
+Administrador -> PublicoView : Informar público
+PublicoView -> SessaoController : registrarPublico()
+SessaoController -> SessaoService : atualizarPublico()
+SessaoService -> SessaoRepository : update()
+SessaoRepository --> SessaoService : sucesso
+SessaoService --> SessaoController : sucesso
+SessaoController --> PublicoView : confirmação
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+start
+
+:Selecionar sessão;
+:Informar quantidade de público;
+
+if (Público <= capacidade?) then (Sim)
+  :Salvar registro;
+  :Exibir sucesso;
+else (Não)
+  :Exibir mensagem de erro;
+endif
+
+stop
+@enduml
